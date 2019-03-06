@@ -1,0 +1,30 @@
+body {
+    background-image: url(../images/background-1.png);
+    /* background-image: url(../images/background-2.png); */
+}
+
+.container {
+    width: 850px;
+}
+
+.row-2 {
+    margin-left: 0;
+    margin-right: 0;
+}
+.card {
+    /* background-color:#1f1f1f; */
+    opacity: 0.2;
+}
+
+.mb-3 {
+    width: 212px;
+}
+
+/* .title-card {
+    background-color:#1f1f1f;
+    opacity: 0.0;
+}
+
+.card-title{
+    color: white;
+} */
