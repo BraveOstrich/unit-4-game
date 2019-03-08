@@ -3,7 +3,7 @@
 var min = 19;
 var max = 120;
 var randomNumber;
-var totalScore = 0;
+var totalScore;
 var wins = 0;
 var losses = 0;
 var crystalNumberOne;
@@ -46,6 +46,7 @@ $(document).ready(function() {
         pointsOne++;
         total1 = crystalNumberOne * pointsOne;
         gameScore();
+        winsLosses()
         console.log(total1);
     });
 
@@ -53,6 +54,7 @@ $(document).ready(function() {
         pointsTwo++;
         total2 = crystalNumberTwo * pointsTwo;
         gameScore();
+        winsLosses()
         console.log(total2);
     });
 
@@ -60,6 +62,7 @@ $(document).ready(function() {
         pointsThree++;
         total3 = crystalNumberThree * pointsThree;
         gameScore();
+        winsLosses()
         console.log(total3);
     });
 
@@ -67,6 +70,7 @@ $(document).ready(function() {
         pointsFour++;
         total4 = crystalNumberFour * pointsFour;
         gameScore();
+        winsLosses()
         console.log(total4);
     });
 
@@ -79,11 +83,30 @@ $(document).ready(function() {
     console.log(totalScore);
     };
 
+    // Wins & Losses
+    function winsLosses(){
+        if(randomNumber < totalScore){
+            losses++;
+            $("#losses").text("Losses: " + losses);
+         } else if(totalScore === randomNumber)
+            wins++;           
+            $("#wins").text("Wins: " + wins);
+        };
+
+    function reset(){
+        if(wins++ || losses++){
+            random();
+            setNumbers();
+        } 
+    }
     // Run functions
 
+    
     random();
     setNumbers();
-    gameScore();
+    //gameScore();
+    
+    
 
 
 });
