@@ -1,5 +1,5 @@
 
-// Random number variables
+// Variables
 var min = 19;
 var max = 120;
 var randomNumber;
@@ -14,12 +14,13 @@ var pointsOne = 0;
 var pointsTwo = 0;
 var pointsThree = 0;
 var pointsFour = 0;
-var total1;
-var total2;
-var total3;
-var total4;
+var total1 = 0;
+var total2 = 0;
+var total3 = 0;
+var total4 = 0;
 
 $(document).ready(function() {
+
     // Create the random number
 
     function random (){
@@ -29,6 +30,8 @@ $(document).ready(function() {
         $("#random-number").append(randomNumber);
     };
 
+    // Create the crystals random number
+
     function setNumbers(){
         crystalNumberOne = Math.floor(Math.random() * 12) + 1;
         crystalNumberTwo = Math.floor(Math.random() * 12) + 1;
@@ -37,33 +40,38 @@ $(document).ready(function() {
         console.log(crystalNumberOne, crystalNumberTwo, crystalNumberThree, crystalNumberFour);
     }
 
-    
+    // Crystals on click function
+
     $("#crystal-1").click(function(){
         pointsOne++;
         total1 = crystalNumberOne * pointsOne;
+        gameScore();
         console.log(total1);
     });
 
     $("#crystal-2").click(function(){
         pointsTwo++;
         total2 = crystalNumberTwo * pointsTwo;
+        gameScore();
         console.log(total2);
     });
 
     $("#crystal-3").click(function(){
         pointsThree++;
         total3 = crystalNumberThree * pointsThree;
+        gameScore();
         console.log(total3);
     });
 
     $("#crystal-4").click(function(){
         pointsFour++;
         total4 = crystalNumberFour * pointsFour;
+        gameScore();
         console.log(total4);
     });
 
-    
-   // Scoring
+   // Scoring function
+
    function gameScore(){
        
     totalScore = total1 + total2 + total3 + total4;
@@ -71,7 +79,7 @@ $(document).ready(function() {
     console.log(totalScore);
     };
 
-    
+    // Run functions
 
     random();
     setNumbers();

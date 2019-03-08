@@ -14,27 +14,33 @@
     <title>Crystals Collector</title>
 </head>
 <body>
+
+    <!-- Container -->
+
     <div class="container">
+
+        <!-- Title Bar -->
+
         <div class="card text-center title-card">
             <div class="card-body">
               <h2 class="card-title">Crystals Collector</h2>
             </div>
         </div>
-        <!-- <div class="card bg-dark text-white text-center">
-            <img src="assets/images/header-background.jpg" class="card-img" alt="Diamond">
-            <div class="card-img-overlay">
-              <h2 class="card-title">Crystals Collector</h2>
-            </div>
-          </div> -->
+        
+        <!-- Instructions Card -->
+
         <div class="card">
-        <div class="card-body">
-            <p>You will be given a random number at the start of the game.</p>
-            <p>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.</p>
-            <p>You win the game by matching your total score to the random number, you will lose the game if your total score goes abouve the random number.</p>
-            <p>The value of each crystal is hidden from you until you click on it.</p>
-            <p>Each time when the game starts, the game will change the values of each crystal.</p>
+            <div class="card-body">
+                <p>You will be given a random number at the start of the game.</p>
+                <p>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.</p>
+                <p>You win the game by matching your total score to the random number, you will lose the game if your total score goes abouve the random number.</p>
+                <p>The value of each crystal is hidden from you until you click on it.</p>
+                <p>Each time when the game starts, the game will change the values of each crystal.</p>
+            </div>
         </div>
-        </div>
+
+        <!-- Random Number & Score Row -->
+
         <div class="row row-1 number-row">
             <div class="col-sm-4">
                 <div class="card bg-light text-center mb-3 d-flex">
@@ -48,7 +54,7 @@
                 <div class="card bg-light text-center mb-3 d-flex">
                     <div class="card-header">Total Score</div>
                     <div class="card-body">
-                        <h1 id="total-score" class="card-text">0</h1>
+                        <h1 id="total-score" class="card-text"></h1>
                     </div>
                 </div>
             </div>
@@ -62,22 +68,24 @@
             </div>
         </div>
         
-            <div class="image-box">
-                <div class="row row-2">
-                    <div class="col-sm-3">
-                        <img src="assets/images/crystal1.png" id="crystal-1" class="img-responsive mx-auto d-block crystal" alt="Crystal">
-                    </div>
-                    <div class="col-sm-3">
-                        <img src="assets/images/crystal2.png" id="crystal-2" class="img-responsive mx-auto d-block crystal" alt="Crystal">
-                    </div>
-                    <div class="col-sm-3">
-                        <img src="assets/images/crystal3.png" id="crystal-3" class="img-responsive mx-auto d-block crystal" alt="Crystal">
-                    </div>
-                    <div class="col-sm-3">
-                        <img src="assets/images/crystal4.png" id="crystal-4" class="img-responsive mx-auto d-block crystal" alt="Crystal">
-                    </div>
+        <!-- Crystals Row -->
+
+        <div class="image-box">
+            <div class="row row-2">
+                <div class="col-sm-3">
+                    <img src="assets/images/crystal1.png" id="crystal-1" class="img-responsive mx-auto d-block crystal" alt="Crystal">
                 </div>
-            </div>          
+                <div class="col-sm-3">
+                    <img src="assets/images/crystal2.png" id="crystal-2" class="img-responsive mx-auto d-block crystal" alt="Crystal">
+                </div>
+                <div class="col-sm-3">
+                    <img src="assets/images/crystal3.png" id="crystal-3" class="img-responsive mx-auto d-block crystal" alt="Crystal">
+                </div>
+                <div class="col-sm-3">
+                    <img src="assets/images/crystal4.png" id="crystal-4" class="img-responsive mx-auto d-block crystal" alt="Crystal">
+                </div>
+            </div>
+        </div>          
     </div>
 
 
