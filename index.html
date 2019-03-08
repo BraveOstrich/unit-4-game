@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
     <title>Crystals Collector</title>
 </head>
 <body>
@@ -32,19 +35,28 @@
             <p>Each time when the game starts, the game will change the values of each crystal.</p>
         </div>
         </div>
-        <div class="row row-1">
-            <div class="col-sm-6">
-                <div class="card">
+        <div class="row row-1 number-row">
+            <div class="col-sm-4">
+                <div class="card bg-light text-center mb-3 d-flex">
+                    <div class="card-header">Random Number</div>
                     <div class="card-body">
-                        <h1 class="card-title text-center">70</h1>
+                        <h1 id="random-number" class="card-text"></h1>
+                    </div>
+                </div>
+            </div>  
+            <div class="col-sm-4">
+                <div class="card bg-light text-center mb-3 d-flex">
+                    <div class="card-header">Total Score</div>
+                    <div class="card-body">
+                        <h1 id="total-score" class="card-text">0</h1>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6">
-                <div class="card">
+            <div class="col-sm-4">
+                <div class="card mb-3 d-flex">
                     <div class="card-body">
                         <h6 class="card-title text-left">Wins:</h6>
-                        <h6 class="card-title text-left">Losses:</h6>
+                        <h6 class="card-title text-left vcenter">Losses:</h6>
                     </div>
                 </div>
             </div>
@@ -53,36 +65,31 @@
             <div class="image-box">
                 <div class="row row-2">
                     <div class="col-sm-3">
-                        <img src="assets/images/crystal1.png" class="img-responsive mx-auto d-block" alt="Crystal">
+                        <img src="assets/images/crystal1.png" id="crystal-1" class="img-responsive mx-auto d-block crystal" alt="Crystal">
                     </div>
                     <div class="col-sm-3">
-                        <img src="assets/images/crystal2.png" class="img-responsive mx-auto d-block" alt="Crystal">
+                        <img src="assets/images/crystal2.png" id="crystal-2" class="img-responsive mx-auto d-block crystal" alt="Crystal">
                     </div>
                     <div class="col-sm-3">
-                        <img src="assets/images/crystal3.png" class="img-responsive mx-auto d-block" alt="Crystal">
+                        <img src="assets/images/crystal3.png" id="crystal-3" class="img-responsive mx-auto d-block crystal" alt="Crystal">
                     </div>
                     <div class="col-sm-3">
-                        <img src="assets/images/crystal4.png" class="img-responsive mx-auto d-block" alt="Crystal">
+                        <img src="assets/images/crystal4.png" id="crystal-4" class="img-responsive mx-auto d-block crystal" alt="Crystal">
                     </div>
                 </div>
-            </div>
-
-            <!-- <div class="card" style="width: 18rem;">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Your Total Score Is:</li>
-                    </ul>
-                    <div class="card-body">
-                      <h1 class="card-title">0</h1>
-                    </div>
-                  </div> -->
-
-            <div class="card bg-light mb-3">
-                <div class="card-header">Your Total Score Is:</div>
-                <div class="card-body">
-                    <h1 class="card-text">0</h1>
-                </div>
-            </div>
-        
+            </div>          
     </div>
+
+
+
+
+
+
+
+
+
+    
+   
+    
 </body>
 </html>
