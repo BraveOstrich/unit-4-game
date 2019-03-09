@@ -8,23 +8,28 @@ body {
 }
 
 .row-2 {
-    margin-left: 0;
-    margin-right: 0;
+    float: none;
+    margin: 0 auto;
+    display: flex; 
+    justify-content: space-between;
 }
 .card {
     /* background-color:#1f1f1f; */
-    opacity: 0.2;
+    opacity: 0.5;
 }
 
+#instructions{
+    margin: 10px 0px 10px 0px;
+}
+
+#wins{
+    padding-top: 20px;
+}
 .mb-3 {
     height: 100%;
 }
 
-/* .title-card {
-    background-color:#1f1f1f;
-    opacity: 0.0;
+.image-box{
+    margin-top: 10px;
 }
 
-.card-title{
-    color: white;
-} */
